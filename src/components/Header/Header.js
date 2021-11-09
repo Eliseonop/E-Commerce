@@ -3,8 +3,13 @@ import "./Header.css";
 import Landing from "../Landing/Landing";
 import Productos from "../Productos/Productos";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Header() {
+
+  const [nav, setNav] = useState({
+    show:true
+  })
   return (
     <div>
       <Router>
@@ -20,12 +25,17 @@ export default function Header() {
               <button
                 type="button"
                 className="navbar-toggler"
+                onClick={()=>{
+                  setNav({
+                    show: !nav.show
+                  })
+                }}
                 data-bs-toggle="collapse"
                 data-bs-target="#menuNavegador"
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div id="menuNavegador" className="collapse navbar-collapse  ">
+              <div id="menuNavegador" className={nav.show? "collapse navbar-collapse" : "collapse navbar-collapse active"  }>
                 <ul className="navbar-nav   ">
                   <li className="nav-item mx-lg-5  mx-md-1">
                     <Link to="/E-Commerce-React/" className="nav-link fs-6  mx-lg-2">
