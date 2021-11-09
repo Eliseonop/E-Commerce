@@ -1,0 +1,82 @@
+#article{
+    background-color: rgb(91, 187, 142);
+    height: 70vh;
+}
+#main{
+    height: 91vh;
+}
+#contenedores{
+    height: 100vh;
+    
+}
+#menuNavegador{
+    margin-left: 25vw;
+}
+#btn-comprar{
+    
+    padding: 11px;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 17px;
+    width: 200px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn-comprar:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/*footer*/
+footer{
+    background: #000;
+    color: beige;
+    text-align: center;
+    padding: 60px 0;
+    
+}
+.textos-footer{
+    grid-column: 1/4;
+    margin-bottom: 30px;
+}
+.con a{
+    color: #fff;
+    font-size: 30px;
+}
+.con{
+    width: 24%;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+}
+.ubi{
+    margin-bottom: 20px;
+}
+
+/* mediaquieris */
+@media screen and (max-width: 970px) {
+    #main{
+        height: 100vh;
+        text-align: center;
+    }
+    #article{
+        height: 90vh;
+        text-align: center;
+    }
+    #btn-comprar{
+        align-self: center;
+    }
+
+    
+
+}
+@media screen and (max-width: 500px) {
+    #img {
+        width: 250px;
+        height:  300px;
+    }
+}
