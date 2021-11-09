@@ -16,6 +16,7 @@
     "react-hook-form": "^7.19.1",
     "react-router-dom": "^6.0.1",
     "react-scripts": "4.0.3",
+    "sweetalert2": "^11.1.10",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -44,4 +45,4 @@
       "last 1 safari version"
     ]
   }
-} 
+}

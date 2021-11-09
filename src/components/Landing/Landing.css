@@ -16,7 +16,7 @@
     margin-left: 25vw;
 }
 #btn-comprar{
-    
+    cursor: pointer;
     padding: 11px;
     background-color: black;
     border-radius: 5px;

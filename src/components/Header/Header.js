@@ -19,10 +19,10 @@ export default function Header() {
             className="navbar navbar-expand-md navbar-dark  border-3 border-bottom  "
             id="navegador"
           >
-            <div className="container-fluid mx-2 ms-4 ">
+            <div className="container-fluid  ms-lg-4 ">
               <a
                 href="#"
-                className="navbar-brand text-dark fs-1 fw-bold ms-4 pe-4"
+                className="navbar-brand text-dark fs-1 fw-bold ms-1 pe-1 pe-lg-4 mx-lg-5"
               >
                 <i class="fas fa-shopping-cart"></i>
                 E-Commerce
