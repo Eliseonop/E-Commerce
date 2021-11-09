@@ -1,12 +1,15 @@
 #article{
     background-color: rgb(91, 187, 142);
     height: 70vh;
+    min-height: 600px;
 }
 #main{
     height: 91vh;
+    min-height: 600px;
 }
 #contenedores{
     height: 100vh;
+    max-height: 500px;
     
 }
 #menuNavegador{
@@ -65,6 +68,9 @@ footer{
     }
     #article{
         height: 90vh;
+        text-align: center;
+    }
+    #contenedores{
         text-align: center;
     }
     #btn-comprar{

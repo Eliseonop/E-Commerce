@@ -7,15 +7,15 @@ export default function Landing() {
         <div>
             
     <main class="container" id="main">
-        <div class="row d-flex align-items-center " id="contenedores">
+        <div class="row d-flex align-items-center  " id="contenedores">
             
             <div class="col-lg-6 ">
                 <img src={pc}   id="img" alt="" width="500px" height="400px"/>
             </div>
-            <div class="col-lg-6 d-flex flex-column  text-start">
+            <div class="col-lg-6 d-flex flex-column  text-lg-start text-sm-center">
                 <h1 class="fw-bold">Las mejores marcas en tus manos</h1>
                 <p >Compre facil y rapido con un solo Click!</p>
-                <a href="https://eliseonop.github.io/E-Commerce/productos" id="btn-comprar" class="">Empezar a comprar</a>
+                <a href="/E-Commerce/productos" id="btn-comprar"  class="">Empezar a comprar</a>
                 
             </div>
         </div>
