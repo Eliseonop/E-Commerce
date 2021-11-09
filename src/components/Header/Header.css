@@ -1,6 +1,10 @@
 #navegador {
-  background-color: rgb(87, 92, 99);
+  background-color: rgb(27, 189, 148);
   /* width: 100vw; */
+}
+.nav-link {
+  color: #2e3532 !important;
+  /* margin-left: 50px !important; */
 }
 /* #NAV{
     margin-right: 100px;
@@ -10,6 +14,9 @@
 /* } */
 nav .navbar-collapse.collapse.active{
   display: flex;
+}
+.fas{
+  padding: 10px;
 }
 /* @media (max-width: 991px) {
   nav .navbar-collapse.collapse {
