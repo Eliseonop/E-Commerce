@@ -38,12 +38,12 @@ export default function Header() {
               <div id="menuNavegador" className={nav.show? "collapse navbar-collapse" : "collapse navbar-collapse active"  }>
                 <ul className="navbar-nav   ">
                   <li className="nav-item mx-lg-5  mx-md-1">
-                    <Link to="/E-Commerce-React/" className="nav-link fs-6  mx-lg-2">
+                    <Link to="/E-Commerce/" className="nav-link fs-6  mx-lg-2">
                       Home
                     </Link>
                   </li>
                   <li className="nav-item mx-lg-4 mx-md-2">
-                    <Link to="/E-Commerce-React/productos" className="nav-link fs-6  mx-lg-2">
+                    <Link to="/E-Commerce/productos" className="nav-link fs-6  mx-lg-2">
                       Productos
                     </Link>
                     
@@ -67,8 +67,8 @@ export default function Header() {
         <Routes>
           {/* <Route path='/' element={<Header/>}/> */}
 
-          <Route path="/E-Commerce-React/" element={<Landing />} />
-          <Route path="/E-Commerce-React/productos" element={<Productos />} />
+          <Route path="/E-Commerce/" element={<Landing />} />
+          <Route path="/E-Commerce/productos" element={<Productos />} />
         </Routes>
       </Router>
     </div>
