@@ -6,6 +6,9 @@
   color: #2e3532 !important;
   /* margin-left: 50px !important; */
 }
+.white:hover {
+  color: white !important;
+}
 /* #NAV{
     margin-right: 100px;
 }    */
