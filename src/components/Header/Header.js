@@ -1,12 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import Landing from "../Landing/Landing";
+
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useState } from "react";
 
-import Productos from "../Productos/Productos";
-import VistaProduct from "../../View/VistaProduct";
-import Carrito from "../Carrito/Carrito";
 
 export default function Header() {
   const [nav, setNav] = useState({
@@ -15,7 +12,7 @@ export default function Header() {
   
   return (
     <div>
-      <Router>
+      
         <div>
           <nav
             className="navbar navbar-expand-md navbar-dark  border-3 border-bottom  "
@@ -86,16 +83,8 @@ export default function Header() {
           </nav>
         </div>
 
-        <Routes>
-          {/* <Route path='/' element={<Header/>}/> */}
-
-          <Route path="/" element={<Landing />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/carrito" element={<Carrito />}/>
-          <Route  path="/productos/:id" element={<VistaProduct/>} />
-
-        </Routes>
-      </Router>
+        
+      
     </div>
   );
 }

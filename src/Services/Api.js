@@ -7,7 +7,7 @@ const URL = "https://616b5ec016c3fa0017171694.mockapi.io/Productos";
 const Api = async () => {
   try {
     const { data } = await axios.get(URL);
-    console.log('data de '  ,data)
+    // console.log('data de '  ,data)
     return data
   } catch (error) {
     throw error;

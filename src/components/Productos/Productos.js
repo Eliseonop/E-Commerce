@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Producto from "./Producto";
-export default function Productos() {
+export default function Productos({setCarrito,carrito}) {
   const [lista, setLista] = useState([]);
 
   const getProducto = async () => {
     try {
       const productosObtenidos = await Api();
-      console.log(productosObtenidos)
+      // console.log(productosObtenidos)
       setLista(productosObtenidos);
     } catch (error) {
       throw error;
@@ -31,7 +31,7 @@ export default function Productos() {
              
             return (
               
-              <Producto key={i} item={item}/>)  
+              <Producto key={i} item={item} setCarrito={setCarrito} carrito={carrito}/>)  
           })}
         </div>
       </div>
