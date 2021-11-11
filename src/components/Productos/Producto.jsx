@@ -3,37 +3,25 @@ import { Fragment } from "react";
 import { useState, useEffect } from "react";
 import { Api } from "../../Services/Api";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-function Producto({ item, setCarrito, carrito }) {
+function Producto({ item, agregarCarrito}) {
   const { id, nombre, descripcion, precio, imagen } = item;
 
   const [lista, setLista] = useState([]);
 
-  const getProducto = async () => {
-    try {
-      const productosObtenidos = await Api();
-      // console.log(productosObtenidos)
-      setLista(productosObtenidos);
-    } catch (error) {
-      throw error;
-    }
-  };
-  useEffect(() => {
-    getProducto();
-  }, []);
+  // const getProducto = async () => {
+  //   try {
+  //     const productosObtenidos = await Api();
+  //     // console.log(productosObtenidos)
+  //     setLista(productosObtenidos);
+  //   } catch (error) {
+  //     throw error;
+  //   }
+  // };
+  // useEffect(() => {
+  //   getProducto();
+  // }, []);
 
-  const agregarCarrito = (id) => {
-    const producto = lista.find((item) => item.id === id);
-    const existe = carrito.findIndex((plato) => plato.id === id);
-
-    if (existe === -1) {
-      setCarrito([...carrito, producto]);
-      setCarrito([...carrito, { ...producto, cantidad: +1 }]);
-    } else {
-      let carritoTmp = [...carrito]; //copia de carrito
-      carritoTmp[existe].cantidad += 1; //ya estoy aumentando su cantidad
-      setCarrito(carritoTmp);
-    }
-  };
+  
 
   return (
     <Fragment>

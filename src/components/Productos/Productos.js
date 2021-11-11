@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Producto from "./Producto";
-export default function Productos({setCarrito,carrito}) {
+export default function Productos({carrito,setCarrito}) {
   const [lista, setLista] = useState([]);
 
   const getProducto = async () => {
@@ -21,7 +21,19 @@ export default function Productos({setCarrito,carrito}) {
   }, []);
   
   /////////////////////////////////}
-  
+  const agregarCarrito = (id) => {
+    const producto = lista.find((item) => item.id === id);
+    const existe = carrito.findIndex((prod) => prod.id === id);
+
+    if (existe === -1) {
+      setCarrito([...carrito, producto]);
+      setCarrito([...carrito, { ...producto, cantidad: +1 }]);
+    } else {
+      let carritoTmp = [...carrito]; //copia de carrito
+      carritoTmp[existe].cantidad += 1; //ya estoy aumentando su cantidad
+      setCarrito(carritoTmp);
+    }
+  };
  
   return (
     <div>
@@ -31,7 +43,8 @@ export default function Productos({setCarrito,carrito}) {
              
             return (
               
-              <Producto key={i} item={item} setCarrito={setCarrito} carrito={carrito}/>)  
+              <Producto key={i} item={item} agregarCarrito={agregarCarrito}
+              />)  
           })}
         </div>
       </div>

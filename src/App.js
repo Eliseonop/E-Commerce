@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/productos" element={<Productos setCarrito={setCarrito} carrito={carrito}/>} />
           <Route path="/carrito" element={<Carrito  carrito={carrito} setCarrito={setCarrito}/>} />
-          <Route path="/productos/:id" element={<VistaProduct />} />
+          <Route path="/productos/:id" element={<VistaProduct setCarrito={setCarrito} carrito={carrito} />} />
         </Routes>
       </Router>
     </div>
