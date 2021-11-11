@@ -53,7 +53,7 @@ export default function Header() {
                 <ul className="navbar-nav   ">
                   <li className="nav-item me-lg-2  mx-md-1">
                     <Link
-                      to="/E-Commerce/"
+                      to="/"
                       className="nav-link fs-5 fs-md-6  white"
                     >
                       Home
@@ -61,7 +61,7 @@ export default function Header() {
                   </li>
                   <li className="nav-item me-lg-2 mx-md-1 ">
                     <Link
-                      to="/E-Commerce/productos"
+                      to="/productos"
                       className="nav-link fs-5 fs-md-6 white "
                     >
                       Productos
@@ -74,7 +74,7 @@ export default function Header() {
                   </li>
                   <li className="nav-item me-lg-2 mx-md-1   ">
                     <Link
-                      to="/E-Commerce/login"
+                      to="/login"
                       className="nav-link fs-5  fs-md-6"
                     >
                       Login
