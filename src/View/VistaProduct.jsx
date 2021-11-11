@@ -22,15 +22,15 @@ const VistaProduct = () => {
 
   return (
     <Fragment>
-      <div className=" d-flex flex-row align-items-center justify-content-center">
+      <div className=" d-flex flex-lg-row align-items-center justify-content-center flex-sm-column flex-xs-column">
         <img 
-        className="m-5 border border-dark p-1"
+        className="rounded mx-5 d-block my-5 border border p-2  border-dark"
           src={product.imagen}
           alt={product.nombre}
           height="400px"
           width="400px"
         />
-        <div className="">
+        <div className="col-sm-12 col-lg-4">
           <h4 className="text-uppercase text-black-50">
             {product.descripcion}
           </h4>
