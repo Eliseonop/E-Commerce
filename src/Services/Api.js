@@ -1,3 +1,4 @@
+
 import axios from "axios";
 
 //esta url e de mocp api
@@ -28,3 +29,18 @@ const crearProducto = async (nuevoProducto) => {
      }
 };
 export {Api,crearProducto}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

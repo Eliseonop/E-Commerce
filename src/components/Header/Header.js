@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useState } from "react";
 
 import Productos from "../Productos/Productos";
+import VistaProduct from "../../View/VistaProduct";
+import Carrito from "../Carrito/Carrito";
 
 export default function Header() {
   const [nav, setNav] = useState({
@@ -89,6 +91,9 @@ export default function Header() {
 
           <Route path="/E-Commerce/" element={<Landing />} />
           <Route path="/E-Commerce/productos" element={<Productos />} />
+          <Route path="/E-Commerce/carrito" element={<Carrito />}/>
+          <Route  path="/E-Commerce/productos/:id" element={<VistaProduct/>} />
+
         </Routes>
       </Router>
     </div>
