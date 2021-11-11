@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import "./VistaProduct.css"
 const VistaProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
@@ -19,11 +20,15 @@ const VistaProduct = () => {
     };
     getProduct();
   }, []);
+  
+
+  
 
   return (
     <Fragment>
-      <div className=" d-flex flex-lg-row align-items-center justify-content-center flex-sm-column flex-xs-column">
+      <div id ="contenedor"className=" d-flex flex-lg-row align-items-center justify-content-center flex-sm-column flex-xs-column">
         <img 
+        id="img"
         className="rounded mx-5 d-block my-5 border border p-2  border-dark"
           src={product.imagen}
           alt={product.nombre}
@@ -38,7 +43,8 @@ const VistaProduct = () => {
 
         <h3 className="fw-bold ">S/ {product.precio}</h3>
         <p className="lead">Adquierelo con un Click</p>
-        <button className="btn btn-outline-dark px-4 py-2">Add to Cart</button>
+        <button className="btn btn-outline-dark px-4 py-2"
+        >Add to Cart</button>
         <NavLink to="/" className="btn btn-outline-dark px-4 py-2 ">
           Comprar
         </NavLink>

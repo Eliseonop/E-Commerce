@@ -1,0 +1,6 @@
+@media screen and (max-width: 575px){
+
+    #contenedor{
+        flex-direction: column !important;
+    }
+}

@@ -23,10 +23,12 @@ function Producto({ item }) {
                 <Link  to={`${id}` } className="btn btn-info">
                 Comprar
                 </Link>
+                <Link  to="/carrito" className="btn btn-success mx-2 m-md-2" onClick={()=>{
+                  console.log({id})}}>
+                Agregar al Carrito
+                </Link>
                 
-                <button className="btn btn-success mx-2 m-md-2">
-                  Agregar al Carrito
-                </button>
+                
               </div>
             </div>
           </div>

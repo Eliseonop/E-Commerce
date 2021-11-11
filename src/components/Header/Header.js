@@ -68,9 +68,9 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="nav-item me-lg-2   mx-md-1">
-                    <a className="nav-link fs-5  fs-md-6 white" href="#">
-                      Carrito
-                    </a>
+                    <Link className="nav-link fs-5  fs-md-6 white" to="/carrito">
+                      Carrito 
+                    </Link>
                   </li>
                   <li className="nav-item me-lg-2 mx-md-1   ">
                     <Link
