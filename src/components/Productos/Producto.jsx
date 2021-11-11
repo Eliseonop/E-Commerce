@@ -1,25 +1,8 @@
 import React from "react";
 import { Fragment } from "react";
-import { useState, useEffect } from "react";
-import { Api } from "../../Services/Api";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 function Producto({ item, agregarCarrito}) {
   const { id, nombre, descripcion, precio, imagen } = item;
-
-  const [lista, setLista] = useState([]);
-
-  // const getProducto = async () => {
-  //   try {
-  //     const productosObtenidos = await Api();
-  //     // console.log(productosObtenidos)
-  //     setLista(productosObtenidos);
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
-  // useEffect(() => {
-  //   getProducto();
-  // }, []);
 
   
 
