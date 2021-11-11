@@ -39,7 +39,7 @@ const VistaProduct = () => {
         <h3 className="fw-bold ">S/ {product.precio}</h3>
         <p className="lead">Adquierelo con un Click</p>
         <button className="btn btn-outline-dark px-4 py-2">Add to Cart</button>
-        <NavLink to="/E-Commerce/" className="btn btn-outline-dark px-4 py-2 ">
+        <NavLink to="/" className="btn btn-outline-dark px-4 py-2 ">
           Comprar
         </NavLink>
         </div>

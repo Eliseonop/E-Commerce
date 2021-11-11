@@ -8,7 +8,7 @@ export default function Landing() {
     const navigate = useNavigate()
 
     const click = ()=>{
-        navigate("/E-Commerce/productos")
+        navigate("/productos")
     }
 
   return (

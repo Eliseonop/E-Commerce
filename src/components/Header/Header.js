@@ -89,10 +89,10 @@ export default function Header() {
         <Routes>
           {/* <Route path='/' element={<Header/>}/> */}
 
-          <Route path="/E-Commerce/" element={<Landing />} />
-          <Route path="/E-Commerce/productos" element={<Productos />} />
-          <Route path="/E-Commerce/carrito" element={<Carrito />}/>
-          <Route  path="/E-Commerce/productos/:id" element={<VistaProduct/>} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/carrito" element={<Carrito />}/>
+          <Route  path="/productos/:id" element={<VistaProduct/>} />
 
         </Routes>
       </Router>
