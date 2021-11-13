@@ -7,9 +7,13 @@ export default function Carrito({ carrito, setCarrito }) {
 
  const eliminado = (id)=>{
     
-        const eliminar = carrito.splice(id,1)
-        setCarrito(carrito)
+        console.log(id)
  }
+ const total = (cantidad,precio) => {
+  console.log(cantidad)
+  return(cantidad===1?(precio):(precio*cantidad))
+  
+};
   return (
     <div className="container my-4">
       <h4>Carrito de compras</h4>
@@ -19,8 +23,8 @@ export default function Carrito({ carrito, setCarrito }) {
                   <th className="col">Item</th>
                   <th className="col">Precio</th>
                   <th className="col">Cantidad</th>
-                  <th className="col">Accion</th>
                   <th className="col">Total</th>
+                  <th className="col">Accion</th>
                 </tr>
               </thead>
       {carrito.length === 0 ? (
@@ -33,6 +37,7 @@ export default function Carrito({ carrito, setCarrito }) {
                   <td>{item.nombre}</td>
                   <td>{item.precio}</td>
                   <td>{item.cantidad}</td>
+                  <td>{total(item.cantidad,item.precio)}</td>
                   <td><button className="btn btn-danger" onClick={eliminado(item.id)}
     
                   >Eliminar</button></td>
